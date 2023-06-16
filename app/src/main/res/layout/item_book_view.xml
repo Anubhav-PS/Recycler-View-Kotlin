@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/itemBookViewCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    app:strokeColor="#1c3437"
+    android:focusable="true"
+    app:strokeWidth="0dp"
+    android:layout_marginBottom="10dp"
+    app:cardBackgroundColor="#1c3437"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingEnd="18dp">
+
+        <ImageView
+            android:id="@+id/itemBookViewCoverImg"
+            android:layout_width="94dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemBookViewTitleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/karla"
+            android:maxLines="3"
+            android:text="The Last Lecture"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/itemBookViewCoverImg"
+            app:layout_constraintTop_toTopOf="@id/itemBookViewCoverImg">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemBookViewAuthorTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/karla"
+            android:maxLines="2"
+            android:text="Randy Pausch"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/itemBookViewCoverImg"
+            app:layout_constraintTop_toBottomOf="@id/itemBookViewTitleTxt">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemBookViewPublisherTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/karla"
+            android:maxLines="1"
+            android:text="The oxford publications"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@id/itemBookViewCoverImg"
+            app:layout_constraintTop_toBottomOf="@id/itemBookViewAuthorTxt">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/itemBookViewEditionTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:fontFamily="@font/karla"
+            android:maxLines="1"
+            android:text="Edition - 4th"
+            android:textColor="@color/white"
+            android:textSize="13sp"
+            app:layout_constraintBottom_toBottomOf="@id/itemBookViewCoverImg"
+            app:layout_constraintStart_toEndOf="@id/itemBookViewCoverImg"
+            app:layout_constraintTop_toBottomOf="@id/itemBookViewPublisherTxt">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>
